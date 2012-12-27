@@ -34,7 +34,6 @@
 			</head>
 			<body>
 				<xsl:value-of select="$H_SUB_COMPONENTS" disable-output-escaping="yes" />
-				<script src="{$H_BASE_PATH}/static/scripts/app.js" type="text/javascript"></script>
 			</body>
 		</html>
 	</xsl:template>
