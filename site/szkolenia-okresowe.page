@@ -1,0 +1,53 @@
+<component name="page">
+	<component name="header">
+		<data>
+			<link href="/bhp">BHP</link>
+			<link href="/szkolenia-okresowe" active="active">Szkolenia Okresowe</link>
+			<link href="/haccp">HACCP</link>
+			<link href="/kadry">Kadry</link>
+		</data>
+	</component>
+	<component name="row" template="content">
+		<data>
+			<title>Szkolenia Okresowe</title>
+		</data>
+		<component name="column">
+			<data>
+				<size>span6</size>
+			</data>
+			<component name="menu">
+				<data>
+					<link href="/bhp">BHP</link>
+					<link href="/szkolenia-okresowe" active="active">Szkolenia Okresowe</link>
+					<link href="/haccp">HACCP</link>
+					<link href="/kadry">Kadry</link>
+				</data>
+			</component>
+		</component>
+		<component name="column">
+			<data>
+				<size>span18</size>
+			</data>
+			<component name="paragraph">
+				<data>
+					<markdown>
+
+* Programy szkoleń dostosowane do stanowisk pracy uczestników szkolenia.
+* Programowe treści szkolenia podawane w formie prezentacji multimedialnej.
+* Filmy szkoleniowe.
+
+					</markdown>
+				</data>
+			</component>
+		</component>
+	</component>
+	<component name="footer">
+		<data>
+			<link href="/bhp">BHP</link>
+			<link href="/szkolenia-okresowe">Szkolenia Okresowe</link>
+			<link href="/haccp">HACCP</link>
+			<link href="/kadry">Kadry</link>
+			<link href="/kontakt">Kontakt</link>
+		</data>
+	</component>
+</component>

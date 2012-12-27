@@ -1,0 +1,47 @@
+<project name="Hoborg Commons" default="help" basedir=".">
+
+	<!-- optional environmental settings -->
+	<property file="build.properties" />
+
+	<!-- set default values if not already set in build.properties -->
+	<property name="dir.base" location="." />
+	<property name="dir.static" location="${dir.base}/public/static" />
+
+	<!-- Commands aliases -->
+	<property name="cmd.lessc" value="lessc" />
+
+	<target name="build.css"
+		description="Builds CSS file(s)."
+	>
+		<echo>Building ${dir.static}/styles/css/main.css</echo>
+		<exec executable="${cmd.lessc}" output="${dir.static}/styles/css/main.css">
+			<arg line="${dir.base}/styles/less/main.less" />
+		</exec>
+		
+		<copy todir="${dir.static}/styles/gfx">
+			<fileset dir="${dir.base}/styles/less/bootstrap-2.2/img">
+				<include name="**.png" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="build.js"
+		description="Builds JS file(s)."
+	>
+		<echo>Building ${dir.base}/public/static/scripts/app.js</echo>
+		<concat destfile="${dir.base}/public/static/scripts/app.js">
+			<fileset dir="${dir.base}/scripts/">
+				<include name="page.js" />
+			</fileset>
+		</concat>
+	</target>
+
+	<!-- Help Message -->
+	<target name="help"
+		description="Prints this help"
+	>
+		<exec executable="ant">
+			<arg value="-p" />
+		</exec>
+	</target>
+</project>
