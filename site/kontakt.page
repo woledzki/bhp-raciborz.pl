@@ -40,4 +40,10 @@ email: bhp-poczta@o2.pl<br />
 			<link href="/kontakt">Kontakt</link>
 		</data>
 	</component>
+	<component name="google-analytics">
+		<data>
+			<account>UA-37293689-1</account>
+			<enabled>1</enabled>
+		</data>
+	</component>
 </component>
