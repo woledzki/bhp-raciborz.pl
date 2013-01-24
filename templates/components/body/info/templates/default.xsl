@@ -6,7 +6,7 @@
 	<xsl:output method="html" encoding="utf-8" indent="yes" />
 
 	<xsl:template match="/component">
-		<div class="span12">
+		<div class="span8">
 			<xsl:choose>
 				<xsl:when test="data/header/@href">
 					<h4><a href="{data/header/@href}"><xsl:value-of select="data/header" /></a></h4>

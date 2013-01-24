@@ -14,25 +14,45 @@
 		<component name="info">
 			<data>
 				<header href="/bhp">BHP</header>
-				<text><![CDATA[<p>Nadzór BHP, przegłądy obiektów, wypadki przy pracy, ocena ryzyka zawodowego</p>]]></text>
+				<text><![CDATA[
+<ul>
+<li>nadzór BHP</li>
+<li>wypadki przy pracy</li>
+<li>ryzyko zawodowe</li>
+<li>odzież robocza i ochronna</li>
+<li>przeglądy</li>
+<li>porady</li>
+<li>instrukcje</li>
+</ul>
+				]]></text>
 			</data>
 		</component>
 		<component name="info">
 			<data>
 				<header href="/szkolenia-okresowe">Szkolenia Okresowe</header>
-				<text><![CDATA[<p>Szkolenia pracodawców ..., osób zatrudnionuch na stanowiskach robotniczych oraz pracownikow administracyjno-biurowych.</p>]]></text>
+				<text><![CDATA[
+<ul>
+<li>wszystkie grupy zawodowe</li>
+<li>u pracodawcy lub poza firmą</li>
+<li>różne formy szkolenia, w tym e-learning</li>
+</ul>
+				]]></text>
 			</data>
 		</component>
 		<component name="info">
 			<data>
 				<header href="/haccp">HACCP</header>
-				<text><![CDATA[<p>Instrukcje, procedury, przegląd obiektów.</p>]]></text>
-			</data>
-		</component>
-		<component name="info">
-			<data>
-				<header href="/kadry">Kadry</header>
-				<text><![CDATA[<p>Prowadzenie dokumentacji.</p>]]></text>
+				<text><![CDATA[
+<ul>
+<li>GHP</li>
+<li>GMP</li>
+<li>analiza zagrożeń</li>
+<li>limity i punkty krytyczne</li>
+<li>monitorowanie</li>
+<li>działania korekcyjne</li>
+<li>szkolenie pracowników</li>
+</ul>
+				]]></text>
 			</data>
 		</component>
 	</component>
