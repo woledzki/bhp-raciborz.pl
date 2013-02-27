@@ -1,9 +1,10 @@
 <component name="page">
 	<component name="header">
-		<data>
+		<data><!-- 
 			<link href="/bhp">BHP</link>
 			<link href="/szkolenia-okresowe">Szkolenia Okresowe</link>
 			<link href="/haccp">HACCP</link>
+		 -->
 		</data>
 	</component>
 	<component name="row" template="hero">
@@ -12,7 +13,7 @@
 		<data />
 		<component name="info">
 			<data>
-				<header href="/bhp">BHP</header>
+				<header>BHP</header>
 				<text><![CDATA[
 <ul>
 <li>nadzór BHP</li>
@@ -28,7 +29,7 @@
 		</component>
 		<component name="info">
 			<data>
-				<header href="/szkolenia-okresowe">Szkolenia Okresowe</header>
+				<header>Szkolenia Okresowe</header>
 				<text><![CDATA[
 <ul>
 <li>wszystkie grupy zawodowe</li>
@@ -40,7 +41,7 @@
 		</component>
 		<component name="info">
 			<data>
-				<header href="/haccp">HACCP</header>
+				<header>HACCP</header>
 				<text><![CDATA[
 <ul>
 <li>GHP</li>
@@ -56,10 +57,11 @@
 		</component>
 	</component>
 	<component name="footer">
-		<data>
+		<data><!-- 
 			<link href="/bhp">BHP</link>
 			<link href="/szkolenia-okresowe">Szkolenia Okresowe</link>
 			<link href="/haccp">HACCP</link>
+		 -->
 			<link href="/kontakt">Kontakt</link>
 		</data>
 	</component>

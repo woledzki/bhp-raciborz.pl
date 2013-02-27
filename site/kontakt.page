@@ -1,9 +1,10 @@
 <component name="page">
 	<component name="header">
-		<data>
+		<data><!-- 
 			<link href="/bhp">BHP</link>
 			<link href="/szkolenia-okresowe">Szkolenia Okresowe</link>
 			<link href="/haccp">HACCP</link>
+		 -->
 		</data>
 	</component>
 	<component name="row" template="content">
@@ -31,10 +32,11 @@ email: bhp-poczta@o2.pl<br />
 		</component>
 	</component>
 	<component name="footer">
-		<data>
+		<data><!-- 
 			<link href="/bhp">BHP</link>
 			<link href="/szkolenia-okresowe">Szkolenia Okresowe</link>
 			<link href="/haccp">HACCP</link>
+		 -->
 			<link href="/kontakt">Kontakt</link>
 		</data>
 	</component>
