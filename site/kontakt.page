@@ -18,7 +18,7 @@
 			<component name="paragraph">
 				<data>
 					<text><![CDATA[
-<div class="media">
+<div class="media" itemscope itemtype="http://data-vocabulary.org/Person">
 <img src="/images/krystyna.jpg" class="img-polaroid pull-left media-object" />
 <address class="media-body">
 <h4>Krystyna Olędzka</h4>

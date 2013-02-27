@@ -9,18 +9,16 @@
 	doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
 	doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
 	cdata-section-elements="script style"
-	indent="yes"
+	indent="no"
 />
 	
 	<xsl:template match="/component">
-		<!--
-		<xsl:variable name="head">
-			<xsl:value-of disable-output-escaping="yes" select="php:function('get_head')" />
-		</xsl:variable>
-		-->
 		<html>
 			<head>
 				<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+				
+				<!-- Google's meta -->
+
 				<title><xsl:value-of select="data/title" /></title>
 				<meta name="keywords" content="BHP, Bezpieczeństwo i Higiena Pracy" />
 				<meta name="description" content="Krysryna Olędzka - 19-letnie doświadczenie w służbie bezpieczeństwa i higieny pracy." />
