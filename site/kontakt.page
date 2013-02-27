@@ -23,9 +23,13 @@
 <address class="media-body">
 <h4>Krystyna Olędzka</h4>
 telefon: 602 339 664<br />
-email: bhp-poczta@o2.pl<br />
+email: <a id="z"></a><br />
 </address>
 </div>
+<script>
+var a="o2.pl",b="bhp-poczta",c=document.getElementById("z"),d=String.fromCharCode(59+5);
+c.innerHTML=b+d+a;c.href="mailto:"+b+d+a;
+</script>
 					]]></text>
 				</data>
 			</component>
