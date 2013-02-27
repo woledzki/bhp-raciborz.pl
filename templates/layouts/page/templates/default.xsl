@@ -22,8 +22,8 @@
 			<head>
 				<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 				<title><xsl:value-of select="data/title" /></title>
-				<meta name="keywords" content="" />
-				<meta name="description" content="" />
+				<meta name="keywords" content="BHP, Bezpieczeństwo i Higiena Pracy" />
+				<meta name="description" content="Krysryna Olędzka - 19-letnie doświadczenie w służbie bezpieczeństwa i higieny pracy." />
 
 				<link rel="shortcut icon" href="{$H_BASE_PATH}/favicon.ico" type="image/x-icon" />
 				<link rel="icon" href="{$H_BASE_PATH}/favicon.ico" type="image/x-icon" />
