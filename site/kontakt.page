@@ -23,7 +23,7 @@
 <div class="media" itemscope itemtype="http://data-vocabulary.org/Person">
 <img src="/images/krystyna.jpg" class="img-polaroid pull-left media-object" itemprop="image" />
 <address class="media-body">
-<h4>Krystyna Olędzka</h4>
+<h4 itemprop="name">Krystyna Olędzka</h4>
 <span itemprop="address">Racibórz</span><br />
 telefon: <span itemprop="telephone">602 339 664</span><br />
 email: <a id="z"></a><br />
