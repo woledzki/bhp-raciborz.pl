@@ -1,6 +1,8 @@
 <component name="page">
 	<component name="header">
-		<data><!-- 
+		<data>
+			<title>Kontakt - BHP, Krystyna Olędzka</title>
+			<!-- 
 			<link href="/bhp">BHP</link>
 			<link href="/szkolenia-okresowe">Szkolenia Okresowe</link>
 			<link href="/haccp">HACCP</link>
