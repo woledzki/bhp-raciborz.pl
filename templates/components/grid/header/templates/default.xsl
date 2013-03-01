@@ -9,16 +9,13 @@
 		<div class="navbar navbar-fixed-top navbar-inverse">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="brand" href="/">Krystyna Olędzka</a>
+					<a class="brand" href="/">BHP, Krystyna Olędzka</a>
 					<ul class="nav">
 						<xsl:for-each select="data/link">
 							<li class="{@active}"><a href="{@href}"><xsl:value-of select="." /></a></li>
 						</xsl:for-each>
 					</ul>
 					<ul class="nav pull-right">
-						<!-- 
-						<li><a href="#">Szukaj</a></li>
-						 -->
 						<li class="divider-vertical"></li>
 						<li><a href="/kontakt">Kontakt</a></li>
 					</ul>

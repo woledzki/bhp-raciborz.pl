@@ -13,7 +13,7 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="span16 offset4" itemtype="http://schema.org/LocalBusiness">
+				<div class="span16 offset4" itemscope="" itemtype="http://schema.org/LocalBusiness">
 					<h2 >Bezpieczeństwo i Higiena Pracy<br />
 						<small>Krystyna Olędzka, Racibórz.</small>
 					</h2>
