@@ -1,12 +1,12 @@
 <component name="page">
 	<component name="header">
 		<data>
-			<title>Kontakt - BHP, Krystyna Olędzka</title>
+			<title>Kontakt - BHP, Racibórz, Krystyna Olędzka</title>
 			<!-- 
 			<link href="/bhp">BHP</link>
 			<link href="/szkolenia-okresowe">Szkolenia Okresowe</link>
 			<link href="/haccp">HACCP</link>
-		 -->
+			-->
 		</data>
 	</component>
 	<component name="row" template="content">
@@ -21,13 +21,13 @@
 				<data>
 					<text><![CDATA[
 <div class="media" itemscope itemtype="http://data-vocabulary.org/Person">
-<img src="/images/krystyna.jpg" class="img-polaroid pull-left media-object" itemprop="image" />
-<address class="media-body">
-<h4 itemprop="name">Krystyna Olędzka</h4>
-<span itemprop="address">Racibórz</span><br />
-telefon: <span itemprop="telephone">602 339 664</span><br />
-email: <a id="z"></a><br />
-</address>
+	<img src="/images/krystyna.jpg" class="img-polaroid pull-left media-object" itemprop="image" />
+	<address class="media-body">
+		<h4 itemprop="name">Krystyna Olędzka</h4>
+		<span itemprop="address">Racibórz</span><br />
+		telefon: <span itemprop="telephone">602 339 664</span><br />
+		email: <a id="z"></a><br />
+	</address>
 </div>
 <script>
 var a="o2.pl",b="bhp-poczta",c=document.getElementById("z"),d=String.fromCharCode(59+5);
