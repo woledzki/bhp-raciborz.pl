@@ -15,7 +15,7 @@
 		</data>
 		<component name="column">
 			<data>
-				<size>offset7 span10</size>
+				<size>offset7 span11</size>
 			</data>
 			<component name="paragraph">
 				<data>
@@ -23,8 +23,10 @@
 <div class="media" itemscope itemtype="http://data-vocabulary.org/Person">
 	<img src="/images/krystyna.jpg" class="img-polaroid pull-left media-object" itemprop="image" />
 	<address class="media-body">
-		<h4 itemprop="name">Krystyna Olędzka</h4>
-		<span itemprop="address">Racibórz</span><br />
+		<h4><span itemprop="name">Krystyna Olędzka</span><br />
+			<small itemprop="affiliation">Bezpieczeństwo i Higiena Pracy</small>
+		</h4>
+		<span itemprop="workLocation">Racibórz</span><br />
 		telefon: <span itemprop="telephone">602 339 664</span><br />
 		email: <a id="z"></a><br />
 	</address>

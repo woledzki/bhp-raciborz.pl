@@ -14,8 +14,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="span16 offset4" itemscope="" itemtype="http://schema.org/LocalBusiness">
-					<h2 itemprop="name">Bezpieczeństwo i Higiena Pracy<br />
-						<small itemprop="founder">Krystyna Olędzka, Racibórz.</small>
+					<h2><span itemprop="name">Bezpieczeństwo i Higiena Pracy</span><br />
+						<small>
+							<span itemprop="founder">Krystyna Olędzka</span>,
+							<span itemprop="address">Racibórz</span>.
+						</small>
 					</h2>
 					<p class="lead" itemprop="description">
 						19-letnie doświadczenie w służbie bezpieczeństwa i higieny pracy.
