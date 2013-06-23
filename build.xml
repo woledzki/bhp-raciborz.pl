@@ -5,20 +5,49 @@
 
 	<!-- set default values if not already set in build.properties -->
 	<property name="dir.base" location="." />
-	<property name="dir.static" location="${dir.base}/public/static" />
+	<property name="dir.out" location="${dir.base}/out" />
+	<property name="dir.out.static" location="${dir.out}/public/static" />
 
 	<!-- Commands aliases -->
-	<property name="cmd.lessc" value="lessc" />
+	<property name="cmd.recess" value="recess" />
+	<property name="cmd.ds-console" value="console.php" />
+
+	<target name="build"
+		depends="clean"
+	>
+		<antcall target="build.css" />
+		<antcall target="build.js" />
+		<antcall target="build.html" />
+
+		<tar destfile="${dir.out}/bhp-raciborz.pl.tgz"
+			basedir="${dir.out}/public"
+			compression="gzip"
+		/>
+	</target>
+
+	<target name="deploy" if="deploy.do_deploy">
+		<scp file="${dir.out}/bhp-raciborz.pl.tgz"
+			todir="${deploy.user}@${deploy.host}:${deploy.target}"
+			keyfile="${deploy.keyfile}"
+		/>
+		<sshexec host="${deploy.host}"
+			username="${deploy.user}"
+			keyfile="${deploy.keyfile}"
+			command="tar xzf ${deploy.target}/bhp-raciborz.pl.tgz -C ${deploy.target}/public_html"
+		/>
+	</target>
 
 	<target name="build.css"
 		description="Builds CSS file(s)."
 	>
-		<echo>Building ${dir.static}/styles/css/main.css</echo>
-		<exec executable="${cmd.lessc}" output="${dir.static}/styles/css/main.css">
+		<echo>Building ${dir.out.static}/styles/css/main.css</echo>
+		<mkdir dir="${dir.out.static}/styles/css/" />
+		<exec executable="${cmd.recess}" output="${dir.out.static}/styles/css/main.css">
+			<arg line="--compress" />
 			<arg line="${dir.base}/styles/less/main.less" />
 		</exec>
-		
-		<copy todir="${dir.static}/styles/gfx">
+
+		<copy todir="${dir.out.static}/styles/gfx">
 			<fileset dir="${dir.base}/styles/less/bootstrap-2.2/img">
 				<include name="**.png" />
 			</fileset>
@@ -28,12 +57,35 @@
 	<target name="build.js"
 		description="Builds JS file(s)."
 	>
-		<echo>Building ${dir.base}/public/static/scripts/app.js</echo>
-		<concat destfile="${dir.base}/public/static/scripts/app.js">
+		<echo>Building ${dir.out.static}/scripts/app.js</echo>
+		<mkdir dir="${dir.out.static}/scripts/" />
+		<concat destfile="${dir.out.static}/scripts/app.js">
 			<fileset dir="${dir.base}/scripts/">
 				<include name="page.js" />
 			</fileset>
 		</concat>
+	</target>
+
+	<target name="build.html">
+		<mkdir dir="${dir.out}/public" />
+		<exec executable="php">
+			<env key="DS_HOSTDIR" value="${dir.base}" />
+			<arg line="${cmd.ds-console}" />
+			<arg line="ds:generate" />
+			<arg line="--source='/'" />
+			<arg line="--output='${dir.out}/public'" />
+		</exec>
+	</target>
+
+	<target name="clean">
+		<echo level="info">Deleting generated files from ${dir.out}</echo>
+		<mkdir dir="${dir.out}" />
+		<mkdir dir="${dir.out.static}" />
+		<delete>
+			<fileset dir="${dir.out}">
+				<include name="**" />
+			</fileset>
+		</delete>
 	</target>
 
 	<!-- Help Message -->
